@@ -12,7 +12,6 @@
     gnome-tweaks
     dconf-editor
     gparted
-    dbeaver-bin
     pinta
     firefox
     yandex-music
@@ -21,15 +20,12 @@
     vlc
 
     # User-space Dev Tools
-    neovim
     starship
     luarocks
     tmux
     lazygit
     lazydocker
-    eza
     cava
-    inxi
     fum
     aider-chat
 
@@ -47,7 +43,7 @@
   ];
 
   imports = [
-    ./random-bg.nix
+    # ./random-bg.nix
     ./dconf.nix
   ];
 

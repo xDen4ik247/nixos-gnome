@@ -61,8 +61,6 @@
   environment.gnome.excludePackages = with pkgs; [
     gnome-contacts
     gnome-maps
-    gnome-music
-    gnome-terminal
     gnome-tour
     gnome-keyring
     epiphany
@@ -71,10 +69,6 @@
     geary
     yelp
   ];
-
-  services.zerotierone = {
-    enable = true;
-  };
 
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -120,13 +114,16 @@
 
     # Core system utilities
     efibootmgr
+    neovim
+    superfile
     wsdd
     wget
     curl
     unzip
-    kitty
     ripgrep
     btop
+    inxi
+    eza
     fastfetch
 
     # Language Managers
