@@ -2,9 +2,9 @@
 
 {
   dconf.settings = {
-    "org/gnome/desktop/input-sources" = {
-      xkb-options = [ "ctrl:swapcaps" ];
-    };
+    # "org/gnome/desktop/input-sources" = {
+    #   xkb-options = [ "ctrl:swapcaps" ];
+    # };
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
       icon-theme = "Papirus-Dark";
@@ -41,8 +41,8 @@
       binding = "<Super>r";
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5" = {
-      name = "Youtube Music";
-      command = "youtube-music";
+      name = "Yandex Music";
+      command = "yandex-music";
       binding = "<Super>y";
     };
     "org/gnome/desktop/wm/keybindings" = {
@@ -61,15 +61,11 @@
         "tilingshell@ferrarodomenico.com"
       ];
       favorite-apps = [
-        "kitty.desktop"
-        "google-chrome.desktop"
-        "slack.desktop"
-        "dbeaver.desktop"
-        "postman.desktop"
+        "firefox.desktop"
         "nautilus.desktop"
-        "com.github.th_ch.youtube_music.desktop"
+        "yandex-music.desktop"
         "org.telegram.desktop.desktop"
-        "random-wallpaper.desktop"
+        # "random-wallpaper.desktop"
       ];
     };
     "org/gnome/shell/extensions/openbar" = {
