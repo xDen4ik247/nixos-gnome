@@ -1,5 +1,5 @@
 {
-  description = "NixOS + Hyprland dotfiles";
+  description = "NixOS + GNOME dotfiles";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
