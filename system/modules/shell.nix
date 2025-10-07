@@ -12,9 +12,8 @@
       zinit light zsh-users/zsh-completions
       zinit light zsh-users/zsh-autosuggestions
       zinit light zdharma-continuum/fast-syntax-highlighting 
-      zinit light MohamedElashri/adguard-helper
-      zinit light chrissicool/zsh-256color
-
+      zinit light zshzoo/cd-ls
+      zinit light tankeryang/zsh-lsd
     '';
   };
   users.defaultUserShell = pkgs.zsh;
