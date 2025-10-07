@@ -123,6 +123,8 @@
     unzip
     ripgrep
     btop
+    pciutils
+    usbutils
     inxi
     lsd
     fastfetch
