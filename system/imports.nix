@@ -3,8 +3,10 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ./modules/nvidia.nix
     ./modules/wifi.nix
-    ./modules/boot.nix
+    ./modules/bootloader.nix
     ./modules/shell.nix
+    ./modules/gaming.nix
   ];
 }
