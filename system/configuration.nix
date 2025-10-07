@@ -27,6 +27,11 @@
     nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
   };
 
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
+
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   time.timeZone = "Europe/Moscow";
@@ -86,10 +91,6 @@
     powerOnBoot = true;
   };
 
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-  };
   systemd.packages = with pkgs; [ lact ];
   systemd.services.lactd.wantedBy = ["multi-user.target"];
 
@@ -110,7 +111,7 @@
     heimdal
     krb5.dev
     gcc
-    lact
+    cargo
 
     # Core system utilities
     efibootmgr
@@ -123,7 +124,7 @@
     ripgrep
     btop
     inxi
-    eza
+    lsd
     fastfetch
 
     # Language Managers
