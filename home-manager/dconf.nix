@@ -16,9 +16,9 @@
       custom-keybindings = lib.mkBefore (map (n: "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom${toString n}/") (lib.range 0 6));
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
-      name = "Chrome";
-      command = "google-chrome-stable";
-      binding = "<Super>b";
+      name = "Console";
+      command = "kgx";
+      binding = "<Super>t";
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
       name = "Nautilus";
@@ -26,19 +26,19 @@
       binding = "<Super>e";
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
-      name = "Kitty";
-      command = "kitty";
+      name = "Console";
+      command = "kgx";
       binding = "<Super>Return";
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
-      name = "Slack";
-      command = "slack";
-      binding = "<Super>c";
+      name = "Firefox";
+      command = "firefox";
+      binding = "<Super>b";
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4" = {
-      name = "Random Wallpaper";
-      command = "${config.home.homeDirectory}/.local/bin/random-bg";
-      binding = "<Super>r";
+      name = "Telegram";
+      command = "telegram-desktop";
+      binding = "<Super>f";
     };
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5" = {
       name = "Yandex Music";
@@ -77,12 +77,12 @@
       trigger-autotheme = true;
       margin = 1.0;
       height = 35.0;
-      bradius = 5.0;
-      dbradius = 5.0;
+      bradius = 12.5;
+      dbradius = 12.5;
       isalpha = 0.71999999999999997;
     };
     "org/gnome/shell/extensions/vitals" = {
-      hot-sensors = ["_processor_usage_" "_memory_usage_"];
+      hot-sensors = ["_temperature_cpu_0 core 0_" "_memory_usage_"];
       position-in-panel = 0;
       use-higher-precision = false;
       alphabetize = true;
@@ -94,17 +94,17 @@
       sigma = 2;
       opacity = 240;
       enable-all = true;
-      blacklist = ["Plank" "com.desktop.ding" "Conky" "kitty" "dconf-editor"];
+      blacklist = [ ];
     };
     "org/gnome/shell/extensions/blur-my-shell/panel" = {
       blur = false;
     };
     "org/gnome/shell/extensions/tilingshell" = {
-      inner-gaps = 12;
-      outer-gaps = 10;
+      inner-gaps = 3;
+      outer-gaps = 20;
     };
     "org/gnome/desktop/wm/preferences" = {
-      button-layout = "appmenu:minimize,close";
+      button-layout = "appmenu:minimize";
     };
   };
 }
