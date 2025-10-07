@@ -11,7 +11,7 @@
       zinit light nullxception/roundy
       zinit light zsh-users/zsh-completions
       zinit light zsh-users/zsh-autosuggestions
-      zinit light zdharama-continuum/fast-syntax-highlighting 
+      zinit light zdharma-continuum/fast-syntax-highlighting 
       zinit light MohamedElashri/adguard-helper
       zinit light chrissicool/zsh-256color
 
