@@ -1,9 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs [
-    steam-desktop
-    bottles
-    lutris
+  environment.systemPackages = with pkgs; [
+    steam
+    lact
   ]; 
 }
