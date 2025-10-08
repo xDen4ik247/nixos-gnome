@@ -21,6 +21,7 @@
 
     # User-space Dev Tools
     starship
+    devenv
     luarocks
     tmux
     lazygit
