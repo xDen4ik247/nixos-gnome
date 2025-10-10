@@ -7,7 +7,5 @@
     ./modules/wifi.nix
     ./modules/bootloader.nix
     ./modules/shell.nix
-    ./modules/python.nix
-    ./modules/gaming.nix
   ];
 }
