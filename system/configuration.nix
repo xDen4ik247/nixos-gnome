@@ -127,6 +127,7 @@
     usbutils
     inxi
     lsd
+    tree
     fastfetch
 
     # Language Managers
