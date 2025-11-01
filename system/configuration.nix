@@ -53,10 +53,14 @@
     variant = "";
   };
 
+  # services.xserver.enable = true;
+  # services.displayManager.gdm.enable = true;
+  # services.desktopManager.gnome.enable = true;
+  # services.displayManager.defaultSession = "gnome";
   services.xserver.enable = true;
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
-  services.displayManager.defaultSession = "gnome";
+  services.xserver.desktopManager.gnome.enable = true;
+  services.xserver.displayManager.gdm.enable = true;
+
 
   services.gnome = {
     tinysparql.enable = false;
