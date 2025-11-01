@@ -12,6 +12,8 @@
     telegram-desktop
     bitwarden-desktop
     vlc
+    libreoffice
+    ani-cli
 
     # User-space Dev Tools
     starship
@@ -23,7 +25,6 @@
     cava
     fum
     aider-chat
-    ani-cli
 
     # GNOME Extensions
     gnomeExtensions.open-bar
